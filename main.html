@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Themed Multi-Page Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="logo">THEME SWITCHER</div>
+    <nav>
+      <ul>
+        <li><button onclick="changeTheme('cyberpunk')">Cyberpunk</button></li>
+        <li><button onclick="changeTheme('retro')">Retro</button></li>
+        <li><button onclick="changeTheme('nature')">Nature</button></li>
+        <li><button onclick="changeTheme('anime')">Anime</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="hero-section">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1 id="theme-title">SELECT A THEME</h1>
+      <p id="theme-description">Click on a theme above to change the style and background.</p>
+
+      <!-- Image space -->
+      <img id="theme-image" src="default-image.jpg" alt="Theme Image" class="extra-image">
+
+      <a href="#" class="btn" id="learnMoreBtn">Learn More</a>
+
+  <!-- Hidden extra content -->
+  <div id="extra-content" style="display: none; margin-top: 20px;">
+    <p id="extra-description">
+      This is extra content about the theme. It will change based on your selection.
+    </p>
+    </div>
+    
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
